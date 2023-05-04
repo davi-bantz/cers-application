@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".citizenProfile.Citizen_Emergency_Contact">
+
+    <ImageButton
+        android:id="@+id/imageButtonforbacktoSetting_EC"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#14F467"
+        android:contentDescription="UserProfilenavigate"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null"
+        app:layout_constraintBottom_toTopOf="@+id/UserEmerConDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692"
+        app:srcCompat="@drawable/user_backtosettings"/>
+
+    <TextView
+        android:id="@+id/Edit_Profile"
+        android:layout_width="241dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Emergency Contact Details"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/UserEmerConDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonforbacktoSetting_EC"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <TextView
+        android:id="@+id/UserEmerConDetails"
+        android:layout_width="333dp"
+        android:layout_height="116dp"
+        android:alpha="10.5"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Emergency Contact"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/EmergencyName"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserEmerConDetails" />
+
+    <TextView
+        android:id="@+id/Show_EmerName"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/EmergencyName"
+        app:layout_constraintEnd_toEndOf="@+id/EmergencyName"
+        app:layout_constraintStart_toStartOf="@+id/EmergencyName"
+        app:layout_constraintTop_toTopOf="@+id/EmergencyName" />
+
+    <TextView
+        android:id="@+id/EmergencyPhoneNumber"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmergencyName" />
+
+    <TextView
+        android:id="@+id/Show_EmerPhoneNumber"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/EmergencyPhoneNumber"
+        app:layout_constraintEnd_toEndOf="@+id/EmergencyPhoneNumber"
+        app:layout_constraintStart_toStartOf="@+id/EmergencyPhoneNumber"
+        app:layout_constraintTop_toTopOf="@+id/EmergencyPhoneNumber" />
+
+    <TextView
+        android:id="@+id/EmergencyPurok"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmergencyPhoneNumber" />
+
+    <TextView
+        android:id="@+id/Show_EmerPurok"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/EmergencyPurok"
+        app:layout_constraintEnd_toEndOf="@+id/EmergencyPurok"
+        app:layout_constraintStart_toStartOf="@+id/EmergencyPurok"
+        app:layout_constraintTop_toTopOf="@+id/EmergencyPurok" />
+
+    <TextView
+        android:id="@+id/EmergencyStreet"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmergencyPurok" />
+
+    <TextView
+        android:id="@+id/Show_EmerStreet"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/EmergencyStreet"
+        app:layout_constraintEnd_toEndOf="@+id/EmergencyStreet"
+        app:layout_constraintStart_toStartOf="@+id/EmergencyStreet"
+        app:layout_constraintTop_toTopOf="@+id/EmergencyStreet" />
+
+    <TextView
+        android:id="@+id/EmergencyBarangay"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmergencyStreet" />
+
+    <TextView
+        android:id="@+id/Show_EmerBarangay"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/EmergencyBarangay"
+        app:layout_constraintEnd_toEndOf="@+id/EmergencyBarangay"
+        app:layout_constraintStart_toStartOf="@+id/EmergencyBarangay"
+        app:layout_constraintTop_toTopOf="@+id/EmergencyBarangay" />
+
+    <TextView
+        android:id="@+id/EmergencyCity"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmergencyBarangay" />
+
+    <TextView
+        android:id="@+id/Show_EmerCity"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/EmergencyCity"
+        app:layout_constraintEnd_toEndOf="@+id/EmergencyCity"
+        app:layout_constraintStart_toStartOf="@+id/EmergencyCity"
+        app:layout_constraintTop_toTopOf="@+id/EmergencyCity" />
+
+    <TextView
+        android:id="@+id/EmergencyProvince"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmergencyCity" />
+
+    <TextView
+        android:id="@+id/Show_EmerProvince"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/EmergencyProvince"
+        app:layout_constraintEnd_toEndOf="@+id/EmergencyProvince"
+        app:layout_constraintStart_toStartOf="@+id/EmergencyProvince"
+        app:layout_constraintTop_toTopOf="@+id/EmergencyProvince" />
+
+    <Button
+        android:id="@+id/ToUpdate_Cit_EmergencContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble"
+        android:text="Save Changes"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmergencyProvince"
+        app:layout_constraintVertical_bias="0.567" />
+
+    <ProgressBar
+        android:id="@+id/progressBarECCitUpdate"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="109dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

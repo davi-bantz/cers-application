@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".rescuerProfile.RescuerProfile">
+
+    <TextView
+        android:id="@+id/textViewCERSUser"
+        android:layout_width="272dp"
+        android:layout_height="73dp"
+        android:background="@android:drawable/divider_horizontal_dark"
+        android:fontFamily="@font/alfa_slab_one"
+        android:foreground="@android:drawable/divider_horizontal_dark"
+        android:gravity="center|center_horizontal|top"
+        android:letterSpacing="0.60"
+        android:text="CERS"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:drawableTint="#A6A6A6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoUserCit"
+        android:layout_width="88dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCERSUser"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/weytrue" />
+
+    <TextClock
+        android:id="@+id/Time"
+        android:layout_width="223dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="124dp"
+        android:format12Hour="hh:mm:ss"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="223dp"
+        android:layout_height="19dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCERSUser"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Time:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Date:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCERSUser" />
+
+    <Button
+        android:id="@+id/buttonEditProfilAct"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:background="@drawable/baseline_settings_24"
+        android:contentDescription="TODO"
+        app:backgroundTint="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCERSUser"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView2"
+        android:layout_width="332dp"
+        android:layout_height="376dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="emergencyMap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Time" />
+
+    <TextView
+        android:id="@+id/textViewEmergencyReceived"
+        android:layout_width="338dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/newcheckbox"
+        android:padding="20dp"
+        android:text="There are no Emergencies Received"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView2" />
+
+    <Button
+        android:id="@+id/accept_Emergency"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/emergencybubble"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Respond"
+        android:textStyle="bold"
+        app:backgroundTint="#96FF58"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmergencyReceived"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/deny_Emergency"
+        android:layout_width="156dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/emergencybubble"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Cancel"
+        android:textStyle="bold"
+        app:backgroundTint="#FF914D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/accept_Emergency"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmergencyReceived"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

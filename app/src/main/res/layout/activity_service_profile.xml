@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regis"
+    tools:context=".rescuerRegistration.ServiceProfile">
+
+    <TextView
+        android:id="@+id/CERSService"
+        android:layout_width="275dp"
+        android:layout_height="76dp"
+        android:alpha="10.5"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="C E R S"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.094" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="137dp"
+        android:layout_height="180dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/weytrue" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service Profile"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.664"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+
+    <EditText
+        android:id="@+id/editResAddressDepOrg"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/bubble"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="Address of Station:"
+        android:textColor="@color/material_dynamic_neutral40"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <EditText
+        android:id="@+id/editRescuerDepOrg"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/bubble"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="Organization/Department:"
+        android:textColor="@color/material_dynamic_neutral40"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <EditText
+        android:id="@+id/editRescuerSpecialization"
+        android:layout_width="336dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/bubble"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:text="Specialization/Role:"
+        android:textColor="@color/material_dynamic_neutral40"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.344"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:id="@+id/CheckboxTextView"
+        android:layout_width="330dp"
+        android:layout_height="308dp"
+        android:background="@drawable/bubble"
+        android:paddingTop="20dp"
+        android:text="Basic Rescue Skills (Check all that applies)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.769" />
+
+    <CheckBox
+        android:id="@+id/BasicSkillFA"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/archivo_medium"
+        android:text="Basic First Aid"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <CheckBox
+        android:id="@+id/BasicSkillCPR"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/archivo_medium"
+        android:text="Cardiopulmonary Resucitation "
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <CheckBox
+        android:id="@+id/BasicSkillRescueSNR"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/archivo_medium"
+        android:text="Search and Rescue"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.697" />
+
+    <CheckBox
+        android:id="@+id/BasicSkillKnotLash"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/archivo_medium"
+        android:text="Lashing and Knot Tying"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.757" />
+
+    <CheckBox
+        android:id="@+id/basicSkillCasHandle"
+        android:layout_width="235dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/archivo_medium"
+        android:text="Casualty/Injured Handling"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.36"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <Button
+        android:id="@+id/RescuerNextProfessionalProfile"
+        android:layout_width="118dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bubble"
+        android:text="NEXT"
+        android:textSize="20sp"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <Button
+        android:id="@+id/RescuerBack2"
+        android:layout_width="118dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bubble"
+        android:text="BACK"
+        android:textSize="20sp"
+        app:backgroundTint="#FFA500"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939" />
+
+    <ProgressBar
+        android:id="@+id/progressBarRescuer2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="109dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

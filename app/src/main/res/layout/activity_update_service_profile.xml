@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".rescuerProfile.UpdateInfoRescuer.Update_ServiceProfile">
+
+    <ImageButton
+        android:id="@+id/imageButtonforbacktoSetting_SERProfUp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#14F467"
+        android:contentDescription="UserProfilenavigate"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null"
+        app:layout_constraintBottom_toTopOf="@+id/UserEmerConDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692"
+        app:srcCompat="@drawable/user_backtosettings"/>
+
+    <TextView
+        android:id="@+id/Edit_Profile"
+        android:layout_width="241dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Update Service Profile "
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/UserEmerConDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonforbacktoSetting_SERProf"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <TextView
+        android:id="@+id/UserEmerConDetails"
+        android:layout_width="333dp"
+        android:layout_height="116dp"
+        android:alpha="10.5"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Update Service Profile"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rescuer Organization"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Rescuer_Organization"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Rescuer_Organization"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Rescuer_Organization" />
+
+    <EditText
+        android:id="@+id/Edit_Rescuer_Organization"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Organization"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserEmerConDetails" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rescuer Role/Specialization"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Rescuer_Role"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Rescuer_Role"
+        app:layout_constraintHorizontal_bias="0.152"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Rescuer_Role" />
+
+    <EditText
+        android:id="@+id/Edit_Rescuer_Role"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Role/Specialization"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rescuer_Organization" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organization Address"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Rescuer_OrgAddress"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Rescuer_OrgAddress"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Rescuer_OrgAddress" />
+
+    <EditText
+        android:id="@+id/Edit_Rescuer_OrgAddress"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Organization Address"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rescuer_Role" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Rescuer Basic Skills"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Rescuer_OrgAddress" />
+
+    <ListView
+        android:id="@+id/Listview_Skills"
+        android:layout_width="318dp"
+        android:layout_height="193dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/list_view_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/Update_Rescuer_ServiceProfileBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bubble"
+        android:text="Update Profile"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Listview_Skills" />
+
+    <ProgressBar
+        android:id="@+id/progressBar_UpdateServiceProf"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="109dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

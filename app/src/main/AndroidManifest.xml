@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CERSApplication"
+        tools:targetApi="31">
+        <activity
+            android:name=".rescuerProfile.UpdateInfoRescuer.update_rescuer_address"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerProfile.UpdateInfoRescuer.RescuerUpdate_Basic_Details"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerProfile.UpdateInfoRescuer.Update_ServiceProfile"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerProfile.Rescuer_Address"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerProfile.Rescuer_UserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerProfile.Rescuer_ServiceProfile"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerProfile.RescuerSettings"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerProfile.respond_toEmergency"
+            android:exported="false" />
+        <activity
+            android:name=".citizenProfile.Sent_emergency_activity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInfoCitizen.forgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInfoCitizen.Update_Email"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInfoCitizen.update_emergencyContact"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInfoCitizen.update_address"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInfoCitizen.Update_Basic_Details"
+            android:exported="false" />
+        <activity
+            android:name=".citizenProfile.UploadProfilePicture"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInfoCitizen.DeleteAccount"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateInfoCitizen.UpdatePassword"
+            android:exported="false" />
+        <activity
+            android:name=".citizenProfile.Citizen_Emergency_Contact"
+            android:exported="false" />
+        <activity
+            android:name=".citizenProfile.Citizen_Address"
+            android:exported="false" />
+        <activity
+            android:name=".citizenProfile.CitizenBasicDetails"
+            android:exported="false" />
+        <activity
+            android:name=".citizenProfile.SettingsCitizenProfile"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerRegistration.ConfirmationRescuer"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerRegistration.Address_Rescuer"
+            android:exported="false" />
+        <activity
+            android:name=".citizenProfile.CitizenProfile"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerProfile.RescuerProfile"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerRegistration.StartProfileRescuer"
+            android:exported="false" />
+        <activity
+            android:name=".citizenregistration.StartProfileCitizen"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerRegistration.RescuerVerification"
+            android:exported="false" />
+        <activity
+            android:name=".rescuerRegistration.ServiceProfile"
+            android:exported="false" />
+        <activity
+            android:name=".citizenregistration.Confirmation"
+            android:exported="false" />
+        <activity
+            android:name=".citizenregistration.EmergencyContact"
+            android:exported="true" />
+        <activity
+            android:name=".citizenregistration.Address"
+            android:exported="true" />
+        <activity
+            android:name=".rescuerRegistration.create_Rescuer"
+            android:exported="false" />
+        <activity
+            android:name=".citizenregistration.create_accountCitizen"
+            android:exported="true" />
+        <activity
+            android:name=".MainParts.LogIn"
+            android:exported="false" />
+        <activity
+            android:name=".MainParts.Register"
+            android:exported="true" />
+        <activity
+            android:name=".MainParts.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".rescuerProfile.Rescuer_Address">
+
+
+    <ImageButton
+        android:id="@+id/imageButtonforbacktoSetting_AD"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#14F467"
+        android:contentDescription="UserProfilenavigate"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null"
+        app:layout_constraintBottom_toTopOf="@+id/AddressDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.692"
+        app:srcCompat="@drawable/user_backtosettings"/>
+
+    <TextView
+        android:id="@+id/Edit_Profile"
+        android:layout_width="241dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="User Address Details"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/AddressDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonforbacktoSetting_AD"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.587" />
+
+    <TextView
+        android:id="@+id/AddressDetails"
+        android:layout_width="346dp"
+        android:layout_height="54dp"
+        android:alpha="10.5"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Address Details"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/AddressPurok"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressDetails" />
+
+    <TextView
+        android:id="@+id/Show_Purok"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/AddressPurok"
+        app:layout_constraintEnd_toEndOf="@+id/AddressPurok"
+        app:layout_constraintStart_toStartOf="@+id/AddressPurok"
+        app:layout_constraintTop_toTopOf="@+id/AddressPurok" />
+
+    <TextView
+        android:id="@+id/AddressStreet"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressPurok" />
+
+    <TextView
+        android:id="@+id/Show_Street"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/AddressStreet"
+        app:layout_constraintEnd_toEndOf="@+id/AddressStreet"
+        app:layout_constraintStart_toStartOf="@+id/AddressStreet"
+        app:layout_constraintTop_toTopOf="@+id/AddressStreet" />
+
+    <TextView
+        android:id="@+id/AddressBarangay"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressStreet" />
+
+
+    <TextView
+        android:id="@+id/Show_Barangay"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/AddressBarangay"
+        app:layout_constraintEnd_toEndOf="@+id/AddressBarangay"
+        app:layout_constraintStart_toStartOf="@+id/AddressBarangay"
+        app:layout_constraintTop_toTopOf="@+id/AddressBarangay" />
+
+    <TextView
+        android:id="@+id/AddressCity"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressBarangay" />
+
+    <TextView
+        android:id="@+id/Show_City"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/AddressCity"
+        app:layout_constraintEnd_toEndOf="@+id/AddressCity"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/AddressCity"
+        app:layout_constraintTop_toTopOf="@+id/AddressCity"
+        app:layout_constraintVertical_bias="0.419" />
+
+    <TextView
+        android:id="@+id/AddressProvince"
+        android:layout_width="321dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bubble"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressCity" />
+
+    <TextView
+        android:id="@+id/Show_Province"
+        android:layout_width="250dp"
+        android:layout_height="18dp"
+        android:hint="Loading..."
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/AddressProvince"
+        app:layout_constraintEnd_toEndOf="@+id/AddressProvince"
+        app:layout_constraintStart_toStartOf="@+id/AddressProvince"
+        app:layout_constraintTop_toTopOf="@+id/AddressProvince" />
+
+
+    <Button
+        android:id="@+id/Save_Changes_Cit_Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/bubble"
+        android:text="Update Address"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddressProvince"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <ProgressBar
+        android:id="@+id/progressBarAddressCitUpdate"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="109dp"
+        android:layout_height="115dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:elevation="10dp"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".UpdateInfoCitizen.Update_Basic_Details">
+
+    <TextView
+        android:id="@+id/Edit_Basic_Details"
+        android:layout_width="241dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Update Basic Details"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonforbacktoSetting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonforbacktoSetting"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="#14F467"
+        android:contentDescription="UserProfilenavigate"
+        android:scrollbarThumbHorizontal="@null"
+        android:scrollbarThumbVertical="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_backtosettings" />
+
+    <TextView
+        android:id="@+id/Update_Details"
+        android:layout_width="334dp"
+        android:layout_height="68dp"
+        android:alpha="10.5"
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Update Profile"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Basic_Details"
+        app:layout_constraintVertical_bias="0.016" />
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Citizen_Name"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Citizen_Name"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Citizen_Name" />
+
+    <EditText
+        android:id="@+id/Edit_Citizen_Name"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your name"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Update_Details" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Citizen_UserName"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Citizen_UserName"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Citizen_UserName" />
+
+    <EditText
+        android:id="@+id/Edit_Citizen_UserName"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Username"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Citizen_Name" />
+
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Citizen_PhoneNumber"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Citizen_PhoneNumber"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Citizen_PhoneNumber" />
+
+    <EditText
+        android:id="@+id/Edit_Citizen_PhoneNumber"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Contact Number"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Citizen_UserName" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Citizen_Birthdate"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Citizen_Birthdate"
+        app:layout_constraintHorizontal_bias="0.07"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Citizen_Birthdate" />
+
+    <EditText
+        android:id="@+id/Edit_Citizen_Birthdate"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bubble"
+        android:hint="Select your Date of Birth"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Citizen_PhoneNumber" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_GenderGroup"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_GenderGroup"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="@+id/Edit_GenderGroup" />
+
+    <RadioGroup
+        android:id="@+id/Edit_GenderGroup"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/update_gender"
+        android:orientation="horizontal"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Citizen_Birthdate"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/Update_Male"
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="96dp"
+            android:fontFamily="@font/archivo_medium"
+            android:text="Male"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/Update_Female"
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="96dp"
+            android:fontFamily="@font/archivo_medium"
+            android:text="Female"
+            android:textSize="16sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Type"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Citizen_BloodTpe"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Citizen_BloodTpe"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Citizen_BloodTpe" />
+
+    <EditText
+        android:id="@+id/Edit_Citizen_BloodTpe"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Blood Type"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_GenderGroup" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Civil Status"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Edit_Citizen_CivilStatus"
+        app:layout_constraintEnd_toEndOf="@+id/Edit_Citizen_CivilStatus"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="@+id/Edit_Citizen_CivilStatus" />
+
+    <EditText
+        android:id="@+id/Edit_Citizen_CivilStatus"
+        android:layout_width="336dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bubble"
+        android:hint="Enter your Civil Status"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:backgroundTint="#9BFF8E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Citizen_BloodTpe" />
+
+    <Button
+        android:id="@+id/Update_Profile_BasicDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bubble"
+        android:text="Update Profile"
+        app:backgroundTint="@android:color/holo_green_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Update_Email"
+        app:layout_constraintVertical_bias="0.216" />
+
+    <Button
+        android:id="@+id/Update_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bubble"
+        android:text="Update Email"
+        app:backgroundTint = "#14F467"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Edit_Citizen_CivilStatus" />
+
+    <ProgressBar
+    android:id="@+id/progressBar_UpdateBD"
+    style="?android:attr/progressBarStyle"
+    android:layout_width="109dp"
+    android:layout_height="115dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    android:elevation="10dp"
+    android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

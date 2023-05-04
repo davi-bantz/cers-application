@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".rescuerProfile.respond_toEmergency">
+
+    <TextView
+        android:id="@+id/Emergency_RespondTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:alpha="10.5"
+        android:fontFamily="@font/alfa_slab_one"
+        android:padding="15dp"
+        android:text="Respond Now!"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView_rescuerRespond"
+        android:layout_width="347dp"
+        android:layout_height="310dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="MappingEntry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Emergency_RespondTextView" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="347dp"
+        android:layout_height="132dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/emergency_contact"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapView_rescuerRespond">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="details"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/userInfo"
+                android:text="Victim Information"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="171dp"
+                tools:layout_editor_absoluteY="654dp"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/Send_Update"
+        android:layout_width="339dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:backgroundTint="#53FF93"
+        android:background="@drawable/list_view_layout"
+        android:contentDescription="Send an update:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2">
+
+        <TextView
+            android:id="@+id/TextViewUpdates0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_medium"
+            android:text="Send an Update"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+                <CheckBox
+                    android:layout_width="316dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/archivo_medium"
+                    android:text="5 Minutes before Arriving"
+                    android:id="@+id/Five_Minutes_Btn"
+                    android:layout_below="@id/TextViewUpdates0"
+                    android:layout_marginStart="12dp"
+                    android:background="@drawable/emergency_contact"
+                    app:backgroundTint="?android:attr/colorPressedHighlight"
+                    android:textColor="#000000"
+                    />
+
+                <CheckBox
+                    android:layout_width="316dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/archivo_medium"
+                    android:text="10 Minutes before Arriving"
+                    android:layout_below="@id/Five_Minutes_Btn"
+                    android:id="@+id/Ten_Minutes_Btn"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/emergency_contact"
+                    app:backgroundTint="?android:attr/colorPressedHighlight"
+                    android:textColor="#000000"
+                    />
+        <Button
+            android:layout_width="316dp"
+            android:layout_height="49dp"
+            android:id="@+id/Send_Update_Btn"
+            android:layout_below="@id/Ten_Minutes_Btn"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="12dp"
+            android:text="Send Update"
+            android:background="@drawable/emergency_contact"
+            app:backgroundTint="#53FF93"
+            android:textColor="#000000"
+            />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

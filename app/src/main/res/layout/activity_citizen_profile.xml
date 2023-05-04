@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/userprof2"
+    tools:context=".citizenProfile.CitizenProfile">
+
+    <TextView
+        android:id="@+id/textViewCERSUser"
+        android:layout_width="272dp"
+        android:layout_height="73dp"
+        android:background="@android:drawable/divider_horizontal_dark"
+        android:fontFamily="@font/alfa_slab_one"
+        android:foreground="@android:drawable/divider_horizontal_dark"
+        android:gravity="center|center_horizontal|top"
+        android:letterSpacing="0.60"
+        android:text="CERS"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:drawableTint="#A6A6A6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <ImageView
+        android:id="@+id/imageViewLogoUserCit"
+        android:layout_width="88dp"
+        android:layout_height="94dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textViewCERSUser"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003"
+        app:srcCompat="@drawable/weytrue" />
+
+    <TextClock
+        android:id="@+id/Time"
+        android:layout_width="223dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="124dp"
+        android:format12Hour="hh:mm:ss"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toEndOf="@+id/textViewTime"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="223dp"
+        android:layout_height="19dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCERSUser"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Time:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Date:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCERSUser" />
+
+    <TextView
+        android:id="@+id/textViewEmergency"
+        android:layout_width="375dp"
+        android:layout_height="680dp"
+        android:layout_marginTop="148dp"
+        android:background="@drawable/bubble"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="Pili og Emergency"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewEmergencyEnglish"
+        android:layout_width="336dp"
+        android:layout_height="45dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:text="(Choose your Emergency)"
+        android:textAlignment="center"
+        android:textColor="?android:attr/colorPressedHighlight"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.275"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmergency"
+        app:layout_constraintTop_toTopOf="@+id/textViewEmergency"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Emergency1"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:background="@drawable/emergencybubble"
+        android:button="@null"
+        android:drawableEnd="@drawable/newcheckbox"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Nasamdan (Wounded)"
+        android:textStyle="bold"
+        app:backgroundTint ="#53FF93"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmergency"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmergency"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEmergencyEnglish"
+        app:layout_constraintVertical_bias="0.033" />
+
+
+    <CheckBox
+        android:id="@+id/checkBox_Emergency2"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:background="@drawable/emergencybubble"
+        android:button="@null"
+        android:drawableEnd="@drawable/newcheckbox"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Natanggong (Stuck)"
+        android:textStyle="bold"
+        app:backgroundTint ="#53FF93"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmergency"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmergency"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Emergency1"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Emergency3"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:background="@drawable/emergencybubble"
+        android:button="@null"
+        android:drawableEnd="@drawable/newcheckbox"
+        app:backgroundTint ="#53FF93"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Kritikal (Critical Condition)"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmergency"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmergency"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Emergency2"
+        app:layout_constraintVertical_bias="0.033" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Emergency4"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:background="@drawable/emergencybubble"
+        android:button="@null"
+        android:drawableEnd="@drawable/newcheckbox"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Patay (Dead/Death)"
+        android:textStyle="bold"
+        app:backgroundTint ="#53FF93"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmergency"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmergency"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Emergency3"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Emergency5"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:background="@drawable/emergencybubble"
+        android:button="@null"
+        android:drawableEnd="@drawable/newcheckbox"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Emergency5"
+        android:textStyle="bold"
+        app:backgroundTint ="#53FF93"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmergency"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmergency"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Emergency4"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <CheckBox
+        android:id="@+id/checkBox_Emergency6"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:background="@drawable/emergencybubble"
+        android:button="@null"
+        android:drawableEnd="@drawable/newcheckbox"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Emergency6"
+        android:textStyle="bold"
+        app:backgroundTint ="#53FF93"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmergency"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmergency"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Emergency5"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <Button
+        android:id="@+id/checkBox_Emergency8"
+        android:layout_width="316dp"
+        android:layout_height="48dp"
+        android:background="@drawable/emergencybubble"
+        android:fontFamily="@font/archivo_medium"
+        android:paddingStart="20dp"
+        android:paddingEnd="30dp"
+        android:text="Uban pa (Others)"
+        android:textStyle="bold"
+        app:backgroundTint = "#96FF58"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="@+id/textViewEmergency"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/textViewEmergency"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_Emergency6"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <RadioGroup
+        android:id="@+id/NumberofCasualty"
+        android:layout_width="325dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.844">
+
+        <RadioButton
+            android:id="@+id/Radio_Group"
+            android:layout_width="156dp"
+            android:layout_height="48dp"
+            android:background="@drawable/emergencybubble"
+            android:button="@null"
+            android:drawableEnd="@drawable/newcheckbox"
+            android:fontFamily="@font/archivo_medium"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:text="Group"
+            android:textStyle="bold"
+            app:backgroundTint="#53FF93" />
+
+        <RadioButton
+            android:id="@+id/Radio_Solo"
+            android:layout_width="156dp"
+            android:layout_height="48dp"
+            android:background="@drawable/emergencybubble"
+            android:button="@null"
+            android:drawableEnd="@drawable/newcheckbox"
+            android:fontFamily="@font/archivo_medium"
+            android:paddingStart="20dp"
+            android:paddingEnd="30dp"
+            android:text="Solo"
+            android:textStyle="bold"
+            app:backgroundTint="#53FF93" />
+
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonEditProfilAct"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:background="@drawable/baseline_settings_24"
+        android:contentDescription="TODO"
+        app:backgroundTint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCERSUser"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonSendMessage"
+        android:layout_width="121dp"
+        android:layout_height="87dp"
+        android:background="@drawable/baseline_send_24"
+        android:contentDescription="TODO"
+        app:backgroundTint="#96FF58"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewEmergency"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.99" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
